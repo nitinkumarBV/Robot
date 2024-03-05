@@ -27,7 +27,12 @@ function moveRobot(initialX, initialY, initialDirection, instructions) {
           instructionFunction();
         }
       }
-      
+
+
+      console.log("This is feature1 branch");
+
+
+
     return { x: currentX, y: currentY, direction: currentDirection };
   }
  
