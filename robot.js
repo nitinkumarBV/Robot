@@ -28,6 +28,8 @@ function moveRobot(initialX, initialY, initialDirection, instructions) {
         }
       }
       
+      console.log("Feature2 branch");
+
     return { x: currentX, y: currentY, direction: currentDirection };
   }
  
