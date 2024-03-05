@@ -28,7 +28,10 @@ function moveRobot(initialX, initialY, initialDirection, instructions) {
         }
       }
 
-    console.log("Master Branch");      
+    console.log("Master Branch");  
+      console.log("Feature2 branch");
+
+      console.log("This is feature1 branch");
 
     return { x: currentX, y: currentY, direction: currentDirection };
 
