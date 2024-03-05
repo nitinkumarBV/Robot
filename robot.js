@@ -16,6 +16,17 @@ function moveRobot(initialX, initialY, initialDirection, instructions) {
         S: () => (currentDirection = 'W'),
         W: () => (currentDirection = 'N'),
       };
+
+      const instructionMap = {
+        R: () => turnRight[currentDirection](),
+        F: () => moveForward[currentDirection](),
+      };
+      for (const instruction of instructions) {
+        const instructionFunction = instructionMap[instruction];
+        if (instructionFunction && typeof instructionFunction === 'function') {
+          instructionFunction();
+        }
+      }
       
     return { x: currentX, y: currentY, direction: currentDirection };
   }
