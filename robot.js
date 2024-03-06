@@ -27,8 +27,11 @@ function moveRobot(initialX, initialY, initialDirection, instructions) {
           instructionFunction();
         }
       }
-      
+
+    console.log("Master Branch");      
+
     return { x: currentX, y: currentY, direction: currentDirection };
+
   }
  
   const result = moveRobot(0, 0, 'E', 'RFFF');
