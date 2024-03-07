@@ -27,6 +27,8 @@ function moveRobot(initialX, initialY, initialDirection, instructions) {
           instructionFunction();
         }
       }
+      
+      console.log("Feature2 branch");
 
     console.log("Master Branch");  
       console.log("Feature2 branch");
